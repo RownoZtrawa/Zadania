@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var d1_Prz=prompt("Dzień 1 = ","");
+var g1_Prz=prompt("Godzina 1 = ","");
+var d2_Prz=prompt("Dzień 2 = ","");
+var g2_Prz=prompt("Godzina 2 = ","");
+var czasd,czasg;
+var a=parseFloat(d1_Prz);
+var b=parseFloat(d2_Prz);
+var c=parseFloat(g1_Prz);
+var d=parseFloat(g2_Prz);
+czasd=(a-b)*86400
+czasg=(d-c)*3600
+czas=czasd-czasg;
+document.write("D1: "+d1_Prz+"<br>");
+document.write("G1: "+g1_Prz+"<br>");
+document.write("D2: "+d2_Prz+"<br>");
+document.write("G2: "+g2_Prz+"<br>");
+document.write("Ilość sekund wynosi: "+czas);
+</script>
+</body>
+</html>
